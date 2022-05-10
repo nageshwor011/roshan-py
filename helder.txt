@@ -1,0 +1,11 @@
+Activate virtual environment
+Install  flowing pacakges 
+
+1) flask => pip install Flask
+2) joblib => pip install joblib
+3) js2py => pip install Js2Py
+4) numpy => pip install numpy
+5) scikit-learn => pip install -U scikit-learn
+6) flask-cors => pip install -U flask-cors
+
+Run this command => flask Run

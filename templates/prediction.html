@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+          body{
+              background: #4d0026;
+              background: linear-gradient(to left, #667292 0%, #a2b9bc 100%);
+          }
+          table{
+             background:lightgrey;
+             color:black;
+             width: 510px;
+             border-collapse:collapse;
+             /* padding:5px 0; */
+             text-align: left;
+             margin: 0 auto;
+             border-radius: 5px;
+            /* border:1px solid black; */
+          }
+          th, td{
+            height:30px;
+            padding: 6px 10px;
+          }
+          tr:nth-of-type(odd){
+            background: #c7c7c7;
+          }
+          tr:first-child th{
+            margin: 0 -10px;
+            border-bottom: 2px solid  #8a8989;
+            border-radius: 5px;
+          }
+          tr:first-child {
+            border-radius: 5px;
+          }
+          .bx{
+             margin-top: 50px;
+          }
+          h2{
+            text-align: center;
+            color:white;
+          }
+          .footer{
+             /* margin:left: 200px; */
+             text-align: center;
+          }
+          .footer-btn{
+             text-decoration: none;
+             background:transparent;
+             color: black;
+             font-size:17px;
+             font-weight: normal;
+             display:inline-block;
+             padding:8px;
+             width:190px;
+             border-radius:4px;
+             border: 1px solid black;
+             /* margin-left:490px; */
+             transition: 0.2s all ease-in-out;
+          }
+         .footer-btn:hover{
+             background-color:black;
+             color: white;
+             font-weight: bold;
+         }
+        .footer-btn:active{
+            transform: scale(0.98);
+            /* box-shadow: 3px 2px 22px 1px; */
+        }
+    </style>
+</head>
+<body>
+<div class="bx">
+<table>
+     <tr>
+        <th colspan="2" style="text-align:center; font-size: 19px; font-weight:bold">Product Details</th>
+    </tr>
+    <tr>
+        <th>Item Weight</th>
+        <td>{{itemWeight}}</td>
+    </tr>
+    <tr>
+        <th>Item Fat Content</th>
+         <td>{{itemFatContent}}</td>
+    </tr>
+    <tr>
+<!--        <th>Item Visiblity</th>-->
+<!--         <td>{{itemVisibility}}</td>-->
+    </tr>
+    <tr>
+        <th>Item Type</th>
+         <td>{{itemType}}</td>
+    </tr>
+    <tr>
+        <th>Item MRP</th>
+         <td>{{itemMrp}}</td>
+    </tr>
+    <tr>
+        <th>Year</th>
+         <td>{{outletEstablishmentYear}}</td>
+    </tr>
+    <tr>
+        <th>Outlet Size</th>
+         <td>{{outletSize}}</td>
+    </tr>
+    <tr>
+        <th>Outlet Location Type</th>
+         <td>{{outletLocationType}}</td>
+    </tr>
+    <tr>
+        <th>Outlet Type</th>
+         <td>{{outletType}}</td>
+    </tr>
+</table>
+    </div>
+    <h2>Predicted Sales: {{result}}</h2>
+<div class="footer">
+        <a class="footer-btn" id="as" href="/second">Predict New Product</a>
+   </div>
+
+</body>
+
+</html>
